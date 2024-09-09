@@ -1,19 +1,25 @@
-package hello.eclipse;
+
+//사용자에게 원의 반지름을 입력받아 원의 면적을 출력하는 프로그램
+
+package Hello.eclipse;
+
+import java.util.Scanner;
 
 public class CircleArea {
-	
 	public static void main(String[] args) {
+		Scanner radius = new Scanner(System.in);
+		
 		final double PI = 3.141592;
-		double radius = 10.0;
 		double circleArea;
+		double rad;
 		
-		int i = 6;
-		byte b = (byte)i;
-		// cast 연산자 위의 연산이 실행될 떄만 int를 byte 타입으로 변경합니다.
+		System.out.print("반지름을 입력하세요: ");
 		
-		circleArea = PI * radius * radius;
+		rad = radius.nextDouble();
+		circleArea = PI * rad * rad;
 		
-		System.out.println("원의 면적 = " + circleArea);
+		System.out.println("원의 면적은: " + circleArea + "입니다.");
+		radius.close();
 	}
-	
 }
+
