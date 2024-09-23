@@ -10,6 +10,8 @@ public class Statment {
 		int [] intArray = new int[5];
 		int max = Integer.MIN_VALUE;
 		int min = Integer.MAX_VALUE;
+		int sum = 0;
+		
 		for(int i = 0; i < intArray.length; i++) {
 			System.out.print(i+"번째 정수 입력 ");
 			intArray[i] = scanner.nextInt();
@@ -17,6 +19,7 @@ public class Statment {
 				max = intArray[i];
 			if(min > intArray[i])
 				min = intArray[i];
+			sum += intArray[i];
 		}
 		
 		for(int i = 0; i < intArray.length; i++) {
@@ -24,7 +27,7 @@ public class Statment {
 			System.out.println(intArray[i]+ " " );
 		}
 		System.out.println();
-		System.out.println("최대값 =" + max + ", 최소값 = " + min);
+		System.out.println("최대값 =" + max + ", 최소값 = " + min + "합 = " + sum + "평균 = " + (double)sum/5)
 		scanner.close();
 	}
 }
