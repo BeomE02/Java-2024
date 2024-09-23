@@ -13,7 +13,7 @@ public class Statment {
 		int i = 1;
 		
 //--------------------------------------------
-		// while 사용
+		//do while 사용
 		
 		do {
 			if(i%7 == 0) {
