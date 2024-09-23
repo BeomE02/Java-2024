@@ -27,7 +27,7 @@ public class Statment {
 			System.out.println(intArray[i]+ " " );
 		}
 		System.out.println();
-		System.out.println("최대값 =" + max + ", 최소값 = " + min + "합 = " + sum + "평균 = " + (double)sum/5)
+		System.out.println("최대값 = " + max + ", 최소값 = " + min + ", 합 = " + sum + ",\ 평균 = " + (double)sum/5);
 		scanner.close();
 	}
 }
