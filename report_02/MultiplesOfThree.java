@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class MultiplesOfThree {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] numbers = new int[18]; // 양의 정수 18개를 저장할 배열
+        int[] numbers = new int[10]; // 양의 정수 18개를 저장할 배열
 
-        System.out.print("양의 정수 18개 입력>> ");
+        System.out.print("양의 정수 10개 입력>> ");
         
         // 18개의 양의 정수 입력 받기
         for (int i = 0; i < numbers.length; i++) {
