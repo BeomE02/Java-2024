@@ -1,3 +1,5 @@
+package java_2024;
+
 import java.util.Scanner;
 
 public class StarPrinter {
