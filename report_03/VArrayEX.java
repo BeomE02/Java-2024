@@ -1,27 +1,28 @@
+package java_2024;
+
 public class VArrayEX {
     public static void main(String[] args) {
-        VArray v = new VArray(5); // 5개의 정수를 저장하는 가변 배열 객체 생성
+        VArray v = new VArray(5);
         System.out.println("용량: " + v.capacity() + ", 저장된 개수: " + v.size());
 
-        for (int i = 0; i < 7; i++) { // 7개 저장
-            v.add(1); // 배열에 순서대로 정수 1 값 저장
+        for (int i = 0; i < 7; i++) {
+            v.add(i); // 배열에 0부터 6까지 순서대로 저장
         }
         System.out.println("용량: " + v.capacity() + ", 저장된 개수: " + v.size());
-        v.printAll();
+        v.printAll(); // 0123456
 
-        v.insert(3, 100); // 배열의 인덱스 3에 100 삽입
-        v.insert(5, 200); // 배열의 인덱스 5에 200 삽입
+        v.insert(3, 100); // 인덱스 3에 100 삽입
+        v.insert(5, 200); // 인덱스 5에 200 삽입
         System.out.println("용량: " + v.capacity() + ", 저장된 개수: " + v.size());
-        v.printAll();
-
-        v.remove(10); // 배열의 인덱스 10의 정수 삭제 (예외 발생)
+        v.printAll(); // 0 1 2 100 3 200 4 5 6
+        
         System.out.println("용량: " + v.capacity() + ", 저장된 개수: " + v.size());
-        v.printAll();
+        v.printAll(); // 0 1 2 100 3 4 5 6
 
-        for (int i = 50; i < 55; i++) { // 5개 저장
-            v.add(i); // 배열에 순서대로 정수 저장
+        for (int i = 50; i < 55; i++) {
+            v.add(i); // 배열에 50부터 54까지 순서대로 저장
         }
         System.out.println("용량: " + v.capacity() + ", 저장된 개수: " + v.size());
-        v.printAll();
+        v.printAll(); // 0 1 2 100 3 4 5 6 50 51 52 53 54
     }
 }
