@@ -11,7 +11,7 @@ class ColorTv extends TV {
 	}
 }
 
-public class TV {
+public class Report1 {
 	public static void main(String[] args) {
 		ColorTv myTv = new ColorTv(70, 65536);
 		myTv.printProperty();
