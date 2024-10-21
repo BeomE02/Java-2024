@@ -1,3 +1,5 @@
+package java2024;
+
 import java.util.Scanner;
 
 abstract class Box {
